@@ -233,3 +233,8 @@ def inputs(eval_data, data_dir, batch_size):
     return _generate_image_and_label_batch(float_image, read_input.label,
                                            min_queue_examples, batch_size,
                                            shuffle=False)
+
+def save_image(images, location, number):
+	images = images.reshape(images.size(0), 3, 32, 32)
+	save_image(images, location + str(number) + '.jpg')
+
