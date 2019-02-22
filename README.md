@@ -2,5 +2,7 @@
 
 This is just a data path to the cifar 100. 
 
-## To do
-will add lusn sonner
+## cifar-100: bed and lamp
+python filter.py and transfrom the files to jpg.
+## LUSN
+python DbToJpg.py convert <lmdb_dir> --out_dir <output_dir>
